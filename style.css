@@ -120,27 +120,27 @@ nav button {
 
 
 /* PROBLEM CONSULT */
-.consult-container button{
-    padding: 8px 40px ;
-    margin:  0 1rem 1rem 0;
+
+.consult-container button {
+    padding: 8px 40px;
+    margin: 0 1rem 1rem 0;
     border: none;
     border-radius: 10px;
 }
 
-.consult-btn-1
-{
+.consult-btn-1 {
     background-color: black;
     color: white;
 }
 
 
-.consult-card-container {
-    display: flex;
+
+.scrollX{
     overflow-x: scroll;
     overflow-y: hidden;
 }
 
-.consult-card-container::-webkit-scrollbar {
+.scrollX::-webkit-scrollbar {
     display: none;
 }
 
@@ -172,22 +172,145 @@ nav button {
 /* Why Astrology？ */
 
 
+.up-arrow {
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    padding: 4px 10px;
+    border-radius: 50%;
+}
+
 /* 4 Reason why you should choose Guruji */
+
+.reasons-card {
+    min-width: 400px;
+    padding: 10px 30px;
+}
+
+.reasons-card-content {
+    margin-left: 20px;
+}
 
 /* 100% Satisfaction guarantee */
 
 
+.sats-card {
+    background-color: #f3f4f8;
+    border-radius: 20px;
+    min-width: 450px;
+    width: 450px;
+    padding: 24px 30px;
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
+    margin: 20px;
+}
+
+.sats-content {
+    width: 300px;
+    min-width: 300px;
+    margin-left: 4rem;
+    position: relative;
+    margin-top: 12px;
+}
+
+.sats-content small {
+    display: inline-block;
+    font-size: 12px;
+    text-align: justify;
+
+}
+
+
+.exporu {
+    margin-left: 1rem;
+}
+
+.sats-card-btn {
+    background-color: transparent;
+    border: 2px solid#965EFB;
+    color: #965EFB;
+    padding: 2px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* How it wroks */
+.works-card {
+    width: 350px;
+    margin: 20px;
+}
+
+
+.works-card-content p {
+    font-size: 12px;
+    padding: 7px 40px;
+}
+
 /* Start your first consultation ＠₹5/min */
+.first-consult-container {
+    margin:  20px;
+    width: 200px;
+    min-width: 200px;
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
+    border-radius: 20px;
 
+}
 
+.first-consult-profile {
+    background-image: url('./img/asset-46.png');
+    /* background-position: 100% 50%; */
+    background-repeat: no-repeat;
+    height: 110px;
+}
+
+.first-consult-profile img{
+    height: 65px;
+    width: 65px;
+    border: 4px solid #b5b5b5;
+    border-radius: 50%;
+}
+
+.single-star{
+    margin-top: -4px;
+}
+
+.first-consult-content{
+    padding: 10px;
+}
+
+.first-consult-content small{
+    font-size: 13px;
+    color: #A7A7A7;
+}
 /* We protect the rights of users */
+
+.protect-cards{
+    margin: 20px;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
+
+}
 
 /* Guruji in News */
 
+.news-container div{
+    box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
+}
 /* What are you waiting for? */
 
+.contact-us{
+    background-image: url('./img/footer.png');
+    height: 400px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
 
+    
+}
 
 /* for all elements */
 .m-neg {
@@ -199,21 +322,39 @@ nav button {
 }
 
 .m-top-2 {
-    margin-top: 2rem;
+    margin-top: 2rem !important;
 }
-.M-y-2{
+
+.M-y-2 {
     margin: 4rem 0;
 }
 
+strong{
+    font-size: 1.4rem;
+}
+
+.bg-grey {
+    background-color: #f6f4f8;
+}
+
 h1{
-    margin: 2rem 0 !important;
-}
-/* 
-.scrollX {
-   
+    margin: 4rem 0 2rem 0 !important;
 }
 
 
-.scrollX::-webkit-scrollbar {
-    display: none; 
-} */
+
+@media only screen and (min-width: 768px)
+{
+    
+}
+
+
+@media only screen and (min-width: 480px)
+{
+    .guide-container{
+        height: 200px;
+    }
+    .content-container{
+        display: none;
+    }
+}
