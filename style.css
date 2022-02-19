@@ -35,11 +35,46 @@ nav button {
     background-color: transparent;
     height: 40px;
     border-radius: 12px !important;
+    position: relative;
+    right: 30px;
+}
+
+.lang-btn{
+    padding: 4px 15px;
+    right: 70px;
+
+}
+.wallet{
+    width: 85px;
+}
+
+/* porfile card */
+
+.profile-card-dropdown #dropdownMenuButton::after{
+    display: none;
 }
 
 
 
-/* porfile card */
+.profile-card-dropdown .dropdown-card{
+    top: 40px !important;
+    left: -60px !important;
+}
+
+
+.profile-card-dropdown .show{
+    border: none;
+    background: transparent;
+}
+
+
+.card-profile-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
 .list-group-item {
     border: none !important;
 }
@@ -56,20 +91,16 @@ nav button {
 
 }
 
-.card {
+.card{
     position: absolute;
     right: 5%;
     top: 10%;
     border-radius: 15px;
     z-index: 10;
     transition: .5s all ease-in-out;
-    display: none;
-
 }
 
-.flex {
-    display: flex;
-}
+
 
 /* Personalize guide */
 .guide-container {
@@ -356,7 +387,7 @@ h1 {
 @media only screen and (max-width: 992px) {
 
     .astro-talk,
-    .nav-profile-logo
+    .profile-card-dropdown
     {
         display: none;
     }
@@ -377,6 +408,7 @@ h1 {
         display: block !important;
         font-size: 12px;
         margin-right: -60px;
+        padding: 2px 15px;
     }
 
     .wallet {

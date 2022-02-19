@@ -26,32 +26,55 @@
             <span class="m-lg-5 astro-talk">Talk with astrologers</span>
         </div>
         <div class="d-flex justify-content-around align-items-center profile-content-container">
-            <div class="btn-group">
-                <button type="button" class="lang-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    English
+            <div class="dropdown btn-group">
+                <button class="lang-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                English
                 </button>
-                <button type="button" class="lang-btn-mb d-none btn dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">
+                <button class="lang-btn-mb d-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     EN
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Hindi</a></li>
-                    <li><a class="dropdown-item" href="#">Marathi</a></li>
-                    <li><a class="dropdown-item" href="#">Malyalam</a></li>
-                    <li><a class="dropdown-item" href="#">Kannada</a></li>
-                    <li><a class="dropdown-item" href="#">Tamil</a></li>
-                    <li><a class="dropdown-item" href="#">Telgu</a></li>
-                </ul>
-
-            </div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#"></a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        <li><a class="dropdown-item" href="#">Marathi</a></li>
+                        <li><a class="dropdown-item" href="#">Malyalam</a></li>
+                        <li><a class="dropdown-item" href="#">Kannada</a></li>
+                        <li><a class="dropdown-item" href="#">Tamil</a></li>
+                        <li><a class="dropdown-item" href="#">Telgu</a></li>
+                    </ul>
+              </div>
             <div class="d-flex justify-content-around align-items-center">
                 <button type="button" class="btn-sm wallet">
                     <i class="fas fa-wallet"></i>
                     <span class="fw-bold">₹ 200</span>
                 </button>
-                <span class="m-lg-2"><img src="./img/profile.jpg" class="nav-profile-logo"></span>
+                <span class="dropdown profile-card-dropdown m-lg-2">
+                    <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="./img/profile.jpg" class="nav-profile-logo">
+                    </span>
+                    <div class="dropdown-menu dropdown-card" aria-labelledby="dropdownMenuButton">
+                        <div class="card" style="width: 16rem;">
+                            <div class="d-flex align-items-center justify-content-center flex-column">
+                                <img src="./img/profile.jpg" class="card-profile-img">
+                                <h6 class="text-center">Anurag</h6>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Order History</li>
+                                <li class="list-group-item">Recharge History</li>
+                                <li class="list-group-item">Followed astrologer</li>
+                                <li class="list-group-item">Account setting</li>
+
+                            </ul>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-link text-decoration-none">Log out</a>
+                            </div>
+                        </div>
+                        </a>
+
+                    </div>
+                </span>
                 <span class="d-none hamburger"> <i class="fas fa-bars"></i> </span>
             </div>
 
@@ -59,20 +82,7 @@
         </div>
     </nav>
     <hr class="m-neg">
-    <div class="card" style="width: 16rem;">
-        <img src="./img/profile.jpg" class="profile-img">
-        <h6 class="text-center">Anurag</h6>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Order History</li>
-            <li class="list-group-item">Recharge History</li>
-            <li class="list-group-item">Followed astrologer</li>
-            <li class="list-group-item">Account setting</li>
 
-        </ul>
-        <div class="card-body text-center">
-            <a href="#" class="card-link text-decoration-none">Log out</a>
-        </div>
-    </div>
 
 
     <!-- /* Personalize guide */ -->
@@ -232,7 +242,7 @@
                     <i class="fas fa-arrow-right"></i>
                 </a>
             </h1>
-            <h5 class="text-center">Astrology reveals the will of the God</h5>
+            <h5 class="text-center pb-4">Astrology reveals the will of the God</h5>
 
 
 
@@ -316,14 +326,14 @@
                 </div>
             </div>
         </div>
-      
-      
+
+
         <!-- 100% Satisfaction guarantee   -->
         <div>
-            <div class="star-line d-flex"> 
-                <div  class="hx" ></div> 
+            <div class="star-line d-flex">
+                <div class="hx"></div>
                 <div><img src="./img/asset44.png" alt=""></div>
-                <div class="hx" ></div>
+                <div class="hx"></div>
             </div>
             <h1 class="text-center">100% Satisfaction guarantee </h1>
             <h6 class="text-center">If you are not satisfied by your consultation. We promise you to refund and you can
@@ -440,9 +450,9 @@
 
 
         <!-- How it works -->
-        <div class=" bg-grey">
+        <div class=" bg-grey ">
             <div class="works ">
-                <h1 class="text-center m-top-2">How it works</h1>
+                <h1 class="text-center pt-5">How it works</h1>
 
                 <div class="works-container d-flex justify-content-center align-items-center flex-wrap">
                     <div class="works-card d-flex flex-column">
@@ -656,7 +666,7 @@
 
         <div class="container-fluid bg-grey">
             <div class=" protect ">
-                <h1 class="text-center">We protect the rights of users</h1>
+                <h1 class="text-center pt-5">We protect the rights of users</h1>
                 <div class="mob-scrollX d-flex flex-row justify-content-around">
                     <div class="dflex flex-column protect-cards">
                         <img src="./img/asset-24.png">
@@ -781,7 +791,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="./script.js"></script>
 </body>
 
 </html>
