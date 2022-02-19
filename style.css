@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 
@@ -135,15 +135,6 @@ nav button {
 
 
 
-.scrollX{
-    overflow-x: scroll;
-    overflow-y: hidden;
-}
-
-.scrollX::-webkit-scrollbar {
-    display: none;
-}
-
 
 .card-1 {
     height: 280px;
@@ -197,7 +188,7 @@ nav button {
 .sats-card {
     background-color: #f3f4f8;
     border-radius: 20px;
-    min-width: 450px;
+    min-width: 400px;
     width: 450px;
     padding: 24px 30px;
     box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
@@ -248,7 +239,7 @@ nav button {
 
 /* Start your first consultation ＠₹5/min */
 .first-consult-container {
-    margin:  20px;
+    margin: 20px;
     width: 200px;
     min-width: 200px;
     box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
@@ -263,28 +254,29 @@ nav button {
     height: 110px;
 }
 
-.first-consult-profile img{
+.first-consult-profile img {
     height: 65px;
     width: 65px;
     border: 4px solid #b5b5b5;
     border-radius: 50%;
 }
 
-.single-star{
+.single-star {
     margin-top: -4px;
 }
 
-.first-consult-content{
+.first-consult-content {
     padding: 10px;
 }
 
-.first-consult-content small{
+.first-consult-content small {
     font-size: 13px;
     color: #A7A7A7;
 }
+
 /* We protect the rights of users */
 
-.protect-cards{
+.protect-cards {
     margin: 20px;
     border-radius: 20px;
     padding: 2rem 4rem;
@@ -294,22 +286,20 @@ nav button {
 
 /* Guruji in News */
 
-.news-container div{
+.news-1-container div{
     box-shadow: 0 4px 21px 0 rgb(0 0 0 / 25%);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
 
 }
+
 /* What are you waiting for? */
 
-.contact-us{
+.contact-us {
     background-image: url('./img/footer.png');
     height: 400px;
-    background-position: 100% 50%;
     background-repeat: no-repeat;
-
-    
 }
 
 /* for all elements */
@@ -329,7 +319,7 @@ nav button {
     margin: 4rem 0;
 }
 
-strong{
+strong {
     font-size: 1.4rem;
 }
 
@@ -337,24 +327,54 @@ strong{
     background-color: #f6f4f8;
 }
 
-h1{
+h1 {
     margin: 4rem 0 2rem 0 !important;
 }
 
 
+.scrollX {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 
-@media only screen and (min-width: 768px)
-{
-    
+.scrollX::-webkit-scrollbar {
+    display: none;
 }
 
 
-@media only screen and (min-width: 480px)
-{
-    .guide-container{
+
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (max-width: 480px) {
+    .guide-container {
         height: 200px;
     }
-    .content-container{
+
+    .content-container {
         display: none;
     }
+
+    .rating-img {
+        width: 100%;
+    }
+
+
+    .mob-scrollX {
+        justify-content: start !important;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .mob-scrollX::-webkit-scrollbar {
+        display: none;
+    }
+
+    .news-container{
+        flex-direction: row;
+        justify-content: start !important;
+
+    }
 }
+
