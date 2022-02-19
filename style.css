@@ -24,7 +24,6 @@
 
 .profile-logo {
     border-radius: 50%;
-    background-color: lime;
     height: 50px;
     width: 50px;
 }
@@ -139,7 +138,6 @@ nav button {
 .card-1 {
     height: 280px;
     min-width: 210px;
-    background-color: lime;
     margin-bottom: 3rem;
     background-image: url('./img/asset-4.png');
     padding: 10px;
@@ -348,6 +346,12 @@ h1 {
 
 
 @media only screen and (max-width: 480px) {
+
+    .astro-talk,
+    .profile-logo{
+        display: none;
+    }
+
     .guide-container {
         height: 200px;
     }
@@ -376,5 +380,6 @@ h1 {
         justify-content: start !important;
 
     }
+
 }
 
