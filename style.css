@@ -5,8 +5,6 @@
     font-family: 'DM Sans', sans-serif;
 }
 
-
-
 /* nav bar */
 
 .profile-content-container {
@@ -160,7 +158,10 @@ nav button {
 
 
 /* Why Astrology？ */
-
+.why-astrology-content{
+    padding: 1rem 5rem;
+    text-align: justify;
+}
 
 .down-arrow {
     background-color: black;
@@ -193,6 +194,14 @@ nav button {
 }
 
 /* 100% Satisfaction guarantee */
+.hx{
+    height: 2px;
+    background: #E2C9FF;
+    width: 60%;
+    position: relative;
+    top: 35px;
+}
+
 .sats-card-container{
     flex-wrap: wrap;
 }
@@ -309,6 +318,7 @@ nav button {
 /* What are you waiting for? */
 
 .contact-us {
+    margin-top: 4rem;
     background-image: url('./img/footer.png');
     height: 400px;
     background-repeat: no-repeat;
@@ -343,7 +353,7 @@ h1 {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
     .astro-talk,
     .nav-profile-logo
